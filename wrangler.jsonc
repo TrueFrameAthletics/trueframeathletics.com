@@ -1,0 +1,35 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "trueframe-athletics",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-01",
+  "observability": { "enabled": true },
+
+  // Static site in ./public. The Worker only runs first for /api/*.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  },
+
+  // Custom domain (zone must be on this Cloudflare account)
+  "routes": [
+    { "pattern": "trueframeathletics.com", "custom_domain": true },
+    { "pattern": "www.trueframeathletics.com", "custom_domain": true }
+  ],
+
+  // Contact form email via Cloudflare Email Routing.
+  // CONTACT_TO must be a VERIFIED destination address in Email Routing.
+  "send_email": [
+    { "name": "SEND_EMAIL", "destination_address": "REPLACE_WITH_YOUR_INBOX@example.com" }
+  ],
+  "vars": {
+    "CONTACT_FROM": "website@trueframeathletics.com",
+    "CONTACT_TO": "REPLACE_WITH_YOUR_INBOX@example.com"
+  }
+
+  // Optional: keep a copy of every form submission.
+  // "kv_namespaces": [{ "binding": "SUBMISSIONS", "id": "<kv-namespace-id>" }]
+}
