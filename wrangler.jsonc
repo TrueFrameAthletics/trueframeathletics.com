@@ -23,7 +23,7 @@
   // Contact form email via Cloudflare Email Routing.
   // CONTACT_TO must be a VERIFIED destination address in Email Routing.
   "send_email": [
-    { "name": "SEND_EMAIL", "destination_address": "REPLACE_WITH_YOUR_INBOX@example.com" }
+    { "name": "SEND_EMAIL", "destination_address": "contact@trueframeathletics.com" }
   ],
   "vars": {
     "CONTACT_FROM": "website@trueframeathletics.com",
