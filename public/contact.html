@@ -11,26 +11,26 @@
 <meta property="og:url" content="https://trueframeathletics.com/contact">
 <meta name="theme-color" content="#111111">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Instrument+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-sub">ATHLETICS</span></span></a>
+    <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-tag">Athletics</span></span></a>
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
     <nav class="nav-menu" id="nav-menu" aria-label="Main">
-      <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/services">Services</a></li><li><a href="/schools-teams">Schools &amp; Teams</a></li><li><a href="/athletes-parents">Athletes &amp; Parents</a></li><li><a href="/contact" aria-current="page">Contact</a></li></ul>
-      <a class="btn btn-primary nav-cta" href="/contact">Schedule a Consultation</a>
+      <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/how-it-works">How It Works</a></li><li><a href="/athletes">Athletes</a></li><li><a href="/teams">Teams &amp; Schools</a></li><li><a href="/about">About</a></li></ul>
+      <a class="btn btn-primary nav-cta" href="/contact">Get Started</a>
     </nav>
   </div>
 </header>
-<main><section class="page-hero on-dark">
+<main>
+<section class="page-hero on-dark">
   <div class="wrap">
     <span class="eyebrow">Contact</span>
     <h1>Let&rsquo;s get <span class="accent">started.</span></h1>
-    <p class="lede">Schedule a free consultation or ask about team and school programs. Tell us a little about the athlete or program and we&rsquo;ll follow up within two business days.</p>
-    
+    <p class="lede">Tell us about your athlete or program. We'll follow up within two business days to discuss whether TrueFrame is a good fit and answer any questions.</p>
     <div class="corner vf" aria-hidden="true"></div>
   </div>
 </section>
@@ -45,37 +45,77 @@
         <div class="field"><label for="f-phone">Phone <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
         <div class="field"><label for="f-role">I am a&hellip;</label>
           <select id="f-role" name="role" required>
-            <option value="">Select one</option><option>Athlete</option><option>Parent / guardian</option><option>Coach</option>
-            <option>Athletic director / administrator</option><option>Club or organization</option><option>Other</option>
+            <option value="">Select one</option><option>Athlete / Parent</option><option>Coach</option>
+            <option>Athletic Director / Administrator</option><option>Club or Organization</option><option>Other</option>
           </select></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="f-athlete">Athlete name <span class="opt">(if different)</span></label><input id="f-athlete" name="athlete_name"></div>
+        <div class="field"><label for="f-age">Athlete age or grade</label><input id="f-age" name="athlete_age"></div>
       </div>
       <div class="form-row">
         <div class="field"><label for="f-sport">Sport</label><input id="f-sport" name="sport" placeholder="e.g. Basketball"></div>
         <div class="field"><label for="f-org">School, team, or organization <span class="opt">(optional)</span></label><input id="f-org" name="organization"></div>
       </div>
-      <fieldset class="chips" id="f-services">
-        <legend>Interested in</legend>
-        <label><input type="checkbox" name="services" value="Mental Performance Coaching"> Mental performance</label>
-        <label><input type="checkbox" name="services" value="Athlete Assessment"> Assessment</label>
-        <label><input type="checkbox" name="services" value="Film Review"> Film review</label>
-        <label><input type="checkbox" name="services" value="Development Plan"> Development plan</label>
-        <label><input type="checkbox" name="services" value="Team/School Program"> Team / school program</label>
-        <label><input type="checkbox" name="services" value="Recruiting Support"> Recruiting</label>
-        <label><input type="checkbox" name="services" value="Not sure"> Not sure yet</label>
-      </fieldset>
-      <div aria-hidden="true" style="position:absolute;left:-9999px"><label for="f-hp">Leave this empty</label><input id="f-hp" name="company_website" tabindex="-1" autocomplete="off"></div>
-      <div class="field"><label for="f-msg">What&rsquo;s going on?</label><textarea id="f-msg" name="message" placeholder="What are you seeing in games? What would you like to improve?"></textarea></div>
-      <div class="btn-row"><button class="btn btn-primary" type="submit" id="f-submit">Request Consultation <span class="arr">&rarr;</span></button></div>
+      <div class="field"><label for="f-concern">Primary performance challenge</label>
+        <select id="f-concern" name="concern">
+          <option value="">Select or describe below</option>
+          <option>Confidence after mistakes</option>
+          <option>Response to pressure</option>
+          <option>Focus and composure</option>
+          <option>Decision-making</option>
+          <option>Handling adversity</option>
+          <option>Playing time / role adjustment</option>
+          <option>Performance anxiety</option>
+          <option>Returning from injury or slump</option>
+          <option>General improvement</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field"><label for="f-msg">Tell us more</label><textarea id="f-msg" name="message" placeholder="What are you seeing in competition? What would you like to improve? Any other details we should know?"></textarea></div>
+      <div class="btn-row"><button class="btn btn-primary" type="submit" id="f-submit">Send Request <span class="arr">&rarr;</span></button></div>
       <div class="form-status" id="f-status" role="status" hidden></div>
     </form>
     <aside class="aside">
-      <div class="aside-box"><h3>Free consultation</h3><p>A 20&ndash;30 minute conversation about the athlete or program, what&rsquo;s happening under pressure, and which services fit. No commitment.</p></div>
-      <div class="aside-box"><h3>Email us directly</h3>
+      <div class="aside-box"><h3>Free Consultation</h3><p>A 20–30 minute conversation about the athlete or program, what's happening under pressure, and how TrueFrame might help.</p></div>
+      <div class="aside-box"><h3>Email Us</h3>
         <div class="copyline"><code id="email-text">info@trueframeathletics.com</code><button class="copy-btn" type="button" id="copy-email">Copy</button></div></div>
-      <div class="aside-box"><h3>Schools &amp; programs</h3><p>Athletic directors and coaches: include your season dates and roster size and we&rsquo;ll come prepared with program options.</p></div>
+      <div class="aside-box"><h3>Teams &amp; Programs</h3><p>Coaches and athletic directors: include your season dates, roster size, and primary goals. We'll come prepared with program options.</p></div>
     </aside>
   </div>
 </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark-dark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-tag">Athletics</span></span></a>
+        <p class="foot-tag">Mental performance, film analysis, and athlete development for athletes who want to perform when it gets hard.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/how-it-works">How It Works</a></li>
+          <li><a href="/athletes">Athletes</a></li>
+          <li><a href="/teams">Teams &amp; Schools</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="/contact">Get Started</a></li>
+          <li><a href="/contact">Team inquiries</a></li>
+          <li><span>info@trueframeathletics.com</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="yr">2026</span> TrueFrame Athletics. trueframeathletics.com</span>
+      <span class="mono">Perform When It Gets Hard.</span>
+    </div>
+  </div>
+</footer>
 <script>
 (function(){
   var f=document.getElementById('contact-form'), s=document.getElementById('f-status'), b=document.getElementById('f-submit');
@@ -84,11 +124,11 @@
     e.preventDefault();
     var el=f.elements, name=el['name'].value.trim(), email=el['email'].value.trim(), role=el['role'].value;
     if(!name||!/^\S+@\S+\.\S+$/.test(email)||!role){ show('err','Please add your name, a valid email, and who you are so we know how to follow up.'); return; }
-    var data={}; new FormData(f).forEach(function(v,k){ if(k==='services'){ (data[k]=data[k]||[]).push(v); } else data[k]=v; });
+    var data={}; new FormData(f).forEach(function(v,k){ data[k]=v; });
     b.disabled=true;
     fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
-      .then(function(r){ if(!r.ok) throw 0; f.reset(); show('ok','<strong>Request received.</strong> We&rsquo;ll follow up within two business days.'); })
-      .catch(function(){ show('err','We couldn&rsquo;t send your request. Please email us at <strong>info@trueframeathletics.com</strong>.'); })
+      .then(function(r){ if(!r.ok) throw 0; f.reset(); show('ok','<strong>Request received.</strong> We'll follow up within two business days.'); })
+      .catch(function(){ show('err','We couldn\'t send your request. Please email us at <strong>info@trueframeathletics.com</strong>.'); })
       .finally(function(){ b.disabled=false; });
   });
   var c=document.getElementById('copy-email');
@@ -97,44 +137,6 @@
     try { navigator.clipboard.writeText(t).then(function(){ c.textContent='Copied'; }, sel); } catch(_){ sel(); }
     function sel(){ var r=document.createRange(); r.selectNodeContents(document.getElementById('email-text')); var w=getSelection(); w.removeAllRanges(); w.addRange(r); }
   });
-})();
-</script></main>
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark-dark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-sub">ATHLETICS</span></span></a>
-        <p class="foot-tag">Mental performance, film analysis, and athlete development for athletes who want to perform when it gets hard.</p>
-      </div>
-      <div class="foot-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/schools-teams">Schools &amp; Teams</a></li>
-          <li><a href="/athletes-parents">Athletes &amp; Parents</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Get started</h4>
-        <ul>
-          <li><a href="/contact">Schedule a consultation</a></li>
-          <li><a href="/contact">Team &amp; school inquiries</a></li>
-          <li><span>info@trueframeathletics.com</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>&copy; <span id="yr">2026</span> TrueFrame Athletics. trueframeathletics.com</span>
-      <span class="mono">See the complete player.</span>
-    </div>
-  </div>
-</footer>
-<script>
-(function(){
-  var t=document.getElementById('nav-toggle'),m=document.getElementById('nav-menu');
-  if(t&&m)t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'Close':'Menu';});
-  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
 })();
 </script>
 </body>
