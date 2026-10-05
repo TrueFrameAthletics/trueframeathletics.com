@@ -26,11 +26,12 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
 
 def header(active):
     """Renders the site header with nav. active = filename of current page."""
-    nav_links = "".join(
-        f'<li><a href="/{link}"{"" if link == "index.html" else link.replace(".html", "")}"'
-        f'{' aria-current="page"' if link == active else ""}>{label}</a></li>'
-        for link, label in NAV
-    )
+    items = []
+    for link, label in NAV:
+        href = "/" if link == "index.html" else "/" + link.replace(".html", "")
+        current = ' aria-current="page"' if link == active else ""
+        items.append('<li><a href="%s"%s>%s</a></li>' % (href, current, label))
+    nav_links = "".join(items)
     return f"""<header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-sub">Athletics</span></span></a>
@@ -101,7 +102,10 @@ def page(title, description, active, url_path, body):
 {body}
 </main>
 {footer()}
-<script src="/worker.js"></script>
+<script>
+var t=document.getElementById("nav-toggle"),m=document.getElementById("nav-menu");
+t.addEventListener("click",function(){{t.setAttribute("aria-expanded",m.classList.toggle("open"))}});
+</script>
 </body>
 </html>"""
 
