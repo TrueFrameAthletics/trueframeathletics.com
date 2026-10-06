@@ -172,9 +172,10 @@ def main():
 <section class="section on-white">
   <div class="wrap">
     <div class="prose">
-      <h2>Meet the Founder</h2>
+      <h2>Richard Cooks — Founder &amp; Mental Performance Coach</h2>
       <p>Richard Cooks holds a degree in psychology and a master’s degree in industrial-organizational psychology. His background combines coaching, athlete development, and healthcare operations. In his role as a customer service supervisor, he coaches employees, supports performance improvement, handles complex situations, and helps people respond constructively under pressure.</p>
       <p>Richard has also supported soldiers as they prepared for overseas assignments. That experience informs his interest in preparation, focus, and responses to uncertainty. Through TrueFrame, he helps athletes practice responses to mistakes, pressure, confidence loss, role changes, and adversity.</p>
+      <p><strong>Note:</strong> TrueFrame Athletics provides performance coaching and athlete development; it does not provide therapy or clinical mental-health treatment.</p>
     </div>
   </div>
 </section>
@@ -184,7 +185,6 @@ def main():
     <div class="prose">
       <h2>The TrueFrame Approach</h2>
       <p>Competition creates pressure, mistakes, expectations, adversity, frustration, and uncertainty. Those moments can affect even skilled athletes. TrueFrame helps athletes develop better responses to those moments through practical coaching and film analysis.</p>
-      <p><strong>Note:</strong> TrueFrame Athletics provides performance coaching and athlete development; it does not provide therapy or clinical mental-health treatment.</p>
     </div>
   </div>
 </section>
