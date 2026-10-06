@@ -172,9 +172,10 @@ def main():
 <section class="section on-white">
   <div class="wrap">
     <div class="prose">
-      <h2>About Richard Cooks</h2>
-      <p>Richard Cooks holds a degree in psychology and a master's degree in industrial-organizational psychology. His background combines coaching, athlete development, and healthcare operations. In his role as a customer service supervisor, he coaches employees, supports performance improvement, handles complex situations, and helps people respond constructively under pressure.</p>
+      <h2>Richard Cooks — Founder &amp; Mental Performance Coach</h2>
+      <p>Richard Cooks holds a degree in psychology and a master’s degree in industrial-organizational psychology. His background combines coaching, athlete development, and healthcare operations. In his role as a customer service supervisor, he coaches employees, supports performance improvement, handles complex situations, and helps people respond constructively under pressure.</p>
       <p>Richard has also supported soldiers as they prepared for overseas assignments. That experience informs his interest in preparation, focus, and responses to uncertainty. Through TrueFrame, he helps athletes practice responses to mistakes, pressure, confidence loss, role changes, and adversity.</p>
+      <p><strong>Note:</strong> TrueFrame Athletics provides performance coaching and athlete development; it does not provide therapy or clinical mental-health treatment..</p>
     </div>
   </div>
 </section>
@@ -184,7 +185,6 @@ def main():
     <div class="prose">
       <h2>The TrueFrame Approach</h2>
       <p>Competition creates pressure, mistakes, expectations, adversity, frustration, and uncertainty. Those moments can affect even skilled athletes. TrueFrame helps athletes develop better responses to those moments through practical coaching and film analysis.</p>
-      <p><strong>Note:</strong> TrueFrame Athletics provides performance coaching and athlete development; it does not provide therapy or clinical mental-health treatment.</p>
     </div>
   </div>
 </section>
@@ -325,6 +325,29 @@ def main():
   <div class="wrap">
     <div class="prose">
       <p>Every athlete faces moments that test their mental strength: mistakes, pressure, setbacks, confidence loss, and unexpected changes. TrueFrame helps athletes build practical responses to those moments through one-on-one coaching, film analysis, and sport-specific strategies.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section on-white">
+  <div class="wrap">
+    <div class="sec-head"><h2>Meet the Founder</h2></div>
+    <div class="prose">
+      <h3>Richard — Founder, TrueFrame Athletics</h3>
+      <p>Richard is the Founder of TrueFrame Athletics, a multi-sport mental-performance and athlete-development company focused on helping athletes perform when competition gets difficult.</p>
+      <p>He holds a degree in Psychology and a Master’s degree in Industrial-Organizational Psychology, providing a strong foundation in human behavior, motivation, leadership, performance, communication, and functioning under pressure.</p>
+      <p>Professionally, Richard works in healthcare operations and performance leadership, where he coaches and develops employees, manages complex situations, supports performance improvement, and helps individuals remain effective in high-pressure environments.</p>
+      <p>His background also includes helping soldiers mentally prepare before overseas deployments and years of experience in coaching and athlete development.</p>
+      <p>Richard created TrueFrame Athletics to bring together psychology, performance development, leadership, and coaching into a practical system for athletes. TrueFrame helps athletes build confidence, reset after mistakes, stay composed under pressure, communicate effectively, and respond to adversity.</p>
+      <h3>Credentials &amp; Experience</h3>
+      <ul style="margin-left: 20px;">
+        <li>Degree in Psychology</li>
+        <li>Master’s Degree in Industrial-Organizational Psychology</li>
+        <li>Healthcare Operations &amp; Performance Leadership</li>
+        <li>Athlete Development &amp; Coaching Experience</li>
+        <li>Mental Preparation Support for Soldiers Before Overseas Deployment</li>
+      </ul>
+      <p>TrueFrame Athletics provides performance coaching and athlete development, not therapy or clinical mental-health services.</p>
     </div>
   </div>
 </section>
