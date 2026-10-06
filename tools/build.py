@@ -329,6 +329,29 @@ def main():
   </div>
 </section>
 
+<section class="section on-white">
+  <div class="wrap">
+    <div class="sec-head"><h2>Meet the Founder</h2></div>
+    <div class="prose">
+      <h3>Richard — Founder, TrueFrame Athletics</h3>
+      <p>Richard is the Founder of TrueFrame Athletics, a multi-sport mental-performance and athlete-development company focused on helping athletes perform when competition gets difficult.</p>
+      <p>He holds a degree in Psychology and a Master’s degree in Industrial-Organizational Psychology, providing a strong foundation in human behavior, motivation, leadership, performance, communication, and functioning under pressure.</p>
+      <p>Professionally, Richard works in healthcare operations and performance leadership, where he coaches and develops employees, manages complex situations, supports performance improvement, and helps individuals remain effective in high-pressure environments.</p>
+      <p>His background also includes helping soldiers mentally prepare before overseas deployments and years of experience in coaching and athlete development.</p>
+      <p>Richard created TrueFrame Athletics to bring together psychology, performance development, leadership, and coaching into a practical system for athletes. TrueFrame helps athletes build confidence, reset after mistakes, stay composed under pressure, communicate effectively, and respond to adversity.</p>
+      <h3>Credentials &amp; Experience</h3>
+      <ul style="margin-left: 20px;">
+        <li>Degree in Psychology</li>
+        <li>Master’s Degree in Industrial-Organizational Psychology</li>
+        <li>Healthcare Operations &amp; Performance Leadership</li>
+        <li>Athlete Development &amp; Coaching Experience</li>
+        <li>Mental Preparation Support for Soldiers Before Overseas Deployment</li>
+      </ul>
+      <p>TrueFrame Athletics provides performance coaching and athlete development, not therapy or clinical mental-health services.</p>
+    </div>
+  </div>
+</section>
+
 <section class="section on-light">
   <div class="wrap">
     <div class="prose">
