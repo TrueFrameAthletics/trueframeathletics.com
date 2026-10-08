@@ -184,7 +184,7 @@ def main():
   <div class="wrap">
     <div class="prose">
       <h2>About Richard Cooks</h2>
-      <p>Richard Cooks holds a degree in psychology and a master's degree in industrial-organizational psychology. His background combines coaching, athlete development, and healthcare operations. Professionally, he works in healthcare operations and performance leadership, where he coaches and develops employees, supports performance improvement, navigates complex situations, and helps people remain effective under pressure.</p>
+      <p>Richard Cooks holds a degree in psychology and a master's degree in industrial-organizational psychology. His background combines coaching, athlete development, and performance leadership. Professionally, he works in performance leadership, where he coaches and develops employees, supports performance improvement, navigates complex situations, and helps people remain effective under pressure.</p>
       <p>Richard has also supported soldiers as they prepared for overseas assignments. That experience informs his interest in preparation, focus, and responses to uncertainty. Through TrueFrame, he helps athletes practice responses to mistakes, pressure, confidence loss, role changes, and adversity.</p>
     </div>
   </div>
