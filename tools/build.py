@@ -49,7 +49,7 @@ def footer():
     <div class="foot-grid">
       <div>
         <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark-dark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-sub">Athletics</span></span></a>
-        <p class="foot-tag">Mental Performance & Adversity Response. Helping athletes across sports reset, refocus, and respond.</p>
+        <p class="foot-tag">Own the Moment. Mental Performance &amp; Adversity Response for athletes who want a repeatable response when competition gets hard.</p>
       </div>
       <div class="foot-col">
         <h4>Explore</h4>
@@ -111,9 +111,9 @@ def main():
     # HOME PAGE
     home_body = """<section class="page-hero on-dark">
   <div class="wrap">
-    <span class="eyebrow">Mental Performance Coaching</span>
+    <span class="eyebrow">Mental Performance &amp; Adversity Response</span>
     <h1>Own the Moment.</h1>
-    <p class="lede">Reset. Refocus. Respond. Help your athletes build mental resilience and execute under pressure.</p>
+    <p class="lede">When pressure rises, mistakes happen, or confidence drops, athletes need more than motivation. TrueFrame builds repeatable responses athletes can use in real competition.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="/contact">Get Started</a>
       <a class="btn btn-ghost" href="/about">Learn More <span class="arr">→</span></a>
@@ -124,20 +124,31 @@ def main():
 
 <section class="section on-white">
   <div class="wrap">
-    <h2>For Athletes & Parents</h2>
-    <p class="lede">Build mental skills that transfer across sports and life.</p>
-    <div class="btn-row">
-      <a class="btn btn-dark" href="/athletes-parents">Explore <span class="arr">→</span></a>
+    <div class="prose">
+      <span class="eyebrow">The TrueFrame Difference</span>
+      <h2>What does it mean to Own the Moment?</h2>
+      <p>It means having a trained response when the game gets difficult. TrueFrame helps athletes recognize the moment, reset after mistakes, refocus on what they can control, and execute the next play with purpose.</p>
+      <p><strong>FRAME is the system. Own the Moment is the result.</strong></p>
     </div>
   </div>
 </section>
 
 <section class="section on-light">
   <div class="wrap">
-    <h2>For Schools & Teams</h2>
-    <p class="lede">Develop team-wide mental performance and resilience.</p>
+    <h2>For Athletes &amp; Parents</h2>
+    <p class="lede">One-on-one coaching that helps athletes own pressure, mistakes, confidence swings, role changes, and adversity.</p>
     <div class="btn-row">
-      <a class="btn btn-dark" href="/schools-teams">Learn More <span class="arr">→</span></a>
+      <a class="btn btn-dark" href="/athletes-parents">Explore Athlete Coaching <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section on-white">
+  <div class="wrap">
+    <h2>For Schools &amp; Teams</h2>
+    <p class="lede">Bring a shared mental-performance language and repeatable reset system to your entire program.</p>
+    <div class="btn-row">
+      <a class="btn btn-dark" href="/schools-teams">Explore Own the Moment for Teams <span class="arr">→</span></a>
     </div>
   </div>
 </section>
@@ -154,7 +165,7 @@ def main():
     with open(os.path.join(PUBLIC, "index.html"), "w") as f:
         f.write(page(
             "TrueFrame Athletics | Mental Performance Coaching",
-            "Mental performance coaching for athletes. Reset, refocus, and respond under pressure.",
+            "Own the Moment with practical mental performance and adversity-response coaching for athletes, teams, schools, and families.",
             "index.html", "/", home_body
         ))
     print("✓ index.html")
@@ -173,7 +184,7 @@ def main():
   <div class="wrap">
     <div class="prose">
       <h2>About Richard Cooks</h2>
-      <p>Richard Cooks holds a degree in psychology and a master's degree in industrial-organizational psychology. His background combines coaching, athlete development, and healthcare operations. In his role as a customer service supervisor, he coaches employees, supports performance improvement, handles complex situations, and helps people respond constructively under pressure.</p>
+      <p>Richard Cooks holds a degree in psychology and a master's degree in industrial-organizational psychology. His background combines coaching, athlete development, and healthcare operations. Professionally, he works in healthcare operations and performance leadership, where he coaches and develops employees, supports performance improvement, navigates complex situations, and helps people remain effective under pressure.</p>
       <p>Richard has also supported soldiers as they prepared for overseas assignments. That experience informs his interest in preparation, focus, and responses to uncertainty. Through TrueFrame, he helps athletes practice responses to mistakes, pressure, confidence loss, role changes, and adversity.</p>
     </div>
   </div>
@@ -182,8 +193,9 @@ def main():
 <section class="section on-light">
   <div class="wrap">
     <div class="prose">
-      <h2>The TrueFrame Approach</h2>
-      <p>Competition creates pressure, mistakes, expectations, adversity, frustration, and uncertainty. Those moments can affect even skilled athletes. TrueFrame helps athletes develop better responses to those moments through practical coaching and film analysis.</p>
+      <h2>Why “Own the Moment”</h2>
+      <p>Competition creates pressure, mistakes, expectations, adversity, frustration, and uncertainty. Athletes cannot always control the moment, but they can train their response to it. That is the idea behind Own the Moment.</p>
+      <p>TrueFrame uses practical coaching, the FRAME system, and competition film to help athletes recognize difficult moments, reset faster, refocus attention, and respond with purpose.</p>
       <p><strong>Note:</strong> TrueFrame Athletics provides performance coaching and athlete development; it does not provide therapy or clinical mental-health treatment.</p>
     </div>
   </div>
@@ -210,8 +222,8 @@ def main():
     services_body = """<section class="page-hero on-dark">
   <div class="wrap">
     <span class="eyebrow">What We Offer</span>
-    <h1>Mental Performance Services</h1>
-    <p class="lede">Coaching, film analysis, and athlete development for individual athletes and teams.</p>
+    <h1>Train the Response. Own the Moment.</h1>
+    <p class="lede">Practical mental-performance coaching, adversity-response training, and film analysis for athletes and teams.</p>
     <div class="corner vf" aria-hidden="true"></div>
   </div>
 </section>
@@ -219,8 +231,8 @@ def main():
 <section class="section on-white">
   <div class="wrap">
     <div class="prose">
-      <h2>Individual Athlete Coaching</h2>
-      <p>One-on-one mental performance coaching using the FRAME system: recognizing competitive challenges, resetting with practical routines, refocusing attention, reflecting on responses, and executing the next opportunity.</p>
+      <h2>Own the Moment — Individual Athlete Coaching</h2>
+      <p>One-on-one coaching helps athletes build a repeatable response to mistakes, pressure, confidence loss, role changes, adversity, and high-stakes competition. The FRAME system gives athletes practical tools they can use in the moment instead of relying only on motivational messaging.</p>
       <p>Sessions include film review when footage is available to pair athlete perspective with objective observation.</p>
     </div>
   </div>
@@ -229,8 +241,8 @@ def main():
 <section class="section on-light">
   <div class="wrap">
     <div class="prose">
-      <h2>Team & School Programs</h2>
-      <p>Develop team-wide mental resilience and performance through workshops, coaching, and film analysis. Programs can be customized for sports, age groups, and specific competitive challenges.</p>
+      <h2>Own the Moment — Team &amp; School Programs</h2>
+      <p>Build a shared mental-performance language across your program through workshops, coaching, and practical reset routines. Programs can be customized by sport, age group, and the competitive challenges your athletes face most often.</p>
     </div>
   </div>
 </section>
@@ -238,8 +250,8 @@ def main():
 <section class="section on-dark">
   <div class="wrap">
     <div class="prose">
-      <h2>Film Analysis & Review</h2>
-      <p>Detailed competition film review that identifies key moments, decisions, and responses. Observations support coaching conversations and help athletes see their performance from a different angle.</p>
+      <h2>Film-to-Response Analysis</h2>
+      <p>Competition film is used to identify pressure moments, mistakes, body-language changes, decision patterns, recovery speed, and response behaviors. The goal is not just to review what happened, but to train what the athlete does next.</p>
     </div>
   </div>
 </section>
@@ -265,8 +277,8 @@ def main():
     teams_body = """<section class="page-hero on-dark">
   <div class="wrap">
     <span class="eyebrow">For Schools & Teams</span>
-    <h1>Build Team Mental Resilience</h1>
-    <p class="lede">Develop competitive mental performance across your team or program.</p>
+    <h1>Bring Own the Moment to Your Program</h1>
+    <p class="lede">Give athletes a shared system for responding to pressure, mistakes, adversity, and high-stakes competition.</p>
     <div class="corner vf" aria-hidden="true"></div>
   </div>
 </section>
@@ -274,8 +286,8 @@ def main():
 <section class="section on-white">
   <div class="wrap">
     <div class="prose">
-      <p>Team mental performance creates competitive advantage. When athletes share language, strategies, and practices for handling pressure, mistakes, and adversity, your program becomes stronger.</p>
-      <p>TrueFrame works with schools and teams to build team-wide mental performance culture and develop consistent reset and refocus routines.</p>
+      <p>Own the Moment gives coaches and athletes a common language for what happens when competition gets difficult. Instead of simply telling athletes to “be confident” or “move on,” TrueFrame teaches repeatable responses they can practice and use.</p>
+      <p>Through the FRAME system, athletes learn how to reset after mistakes, regain focus, manage adversity, communicate under pressure, and execute the next opportunity.</p>
     </div>
   </div>
 </section>
@@ -283,13 +295,16 @@ def main():
 <section class="section on-light">
   <div class="wrap">
     <div class="prose">
-      <h2>Programs Include</h2>
+      <h2>Own the Moment Team Program</h2>
       <ul style="margin-left: 20px;">
-        <li><strong>Team workshops</strong> on mental performance fundamentals</li>
-        <li><strong>Individual athlete coaching</strong> for key players</li>
-        <li><strong>Film analysis sessions</strong> to reinforce team concepts</li>
-        <li><strong>Coaching staff consultation</strong> to integrate mental performance into team training</li>
+        <li><strong>Baseline athlete and coach assessment</strong> to identify current challenges and pressure points</li>
+        <li><strong>Team mental-performance sessions</strong> focused on mistakes, pressure, confidence, controllables, and adversity</li>
+        <li><strong>FRAME reset tools</strong> athletes can use during practice and competition</li>
+        <li><strong>Film-to-response review</strong> when footage is available</li>
+        <li><strong>Coach consultation</strong> to reinforce the language and tools after sessions</li>
+        <li><strong>Post-program feedback</strong> to identify progress and next steps</li>
       </ul>
+      <p style="margin-top: 24px;"><strong>Founding School Pilot:</strong> A focused entry program for schools that want to introduce the Own the Moment approach before expanding it across a season or athletic department.</p>
     </div>
   </div>
 </section>
@@ -315,8 +330,8 @@ def main():
     athletes_body = """<section class="page-hero on-dark">
   <div class="wrap">
     <span class="eyebrow">For Athletes & Parents</span>
-    <h1>Develop Mental Performance</h1>
-    <p class="lede">Mental skills training for individual athletes ready to own the moment.</p>
+    <h1>Own the Moment When It Gets Hard</h1>
+    <p class="lede">Train the response you want when pressure rises, mistakes happen, or confidence starts to slip.</p>
     <div class="corner vf" aria-hidden="true"></div>
   </div>
 </section>
@@ -324,7 +339,8 @@ def main():
 <section class="section on-white">
   <div class="wrap">
     <div class="prose">
-      <p>Every athlete faces moments that test their mental strength: mistakes, pressure, setbacks, confidence loss, and unexpected changes. TrueFrame helps athletes build practical responses to those moments through one-on-one coaching, film analysis, and sport-specific strategies.</p>
+      <p>Every athlete faces moments that test them: mistakes, pressure, setbacks, confidence loss, role changes, bad calls, and unexpected adversity. TrueFrame helps athletes train what happens next through one-on-one coaching, competition film, and practical mental-performance tools.</p>
+      <p>The goal is simple: <strong>recognize the moment, reset, refocus, and respond.</strong></p>
     </div>
   </div>
 </section>
@@ -332,8 +348,8 @@ def main():
 <section class="section on-light">
   <div class="wrap">
     <div class="prose">
-      <h2>How It Works</h2>
-      <p><strong>The FRAME System:</strong></p>
+      <h2>The FRAME System</h2>
+      <p><strong>FRAME is the method athletes use to Own the Moment:</strong></p>
       <ul style="margin-left: 20px;">
         <li><strong>F</strong>ocus — Recognize what is happening</li>
         <li><strong>R</strong>eset — Use practical routines to refocus</li>
@@ -367,8 +383,8 @@ def main():
     contact_body = f"""<section class="page-hero on-dark">
   <div class="wrap">
     <span class="eyebrow">Get Started</span>
-    <h1>Let's Connect</h1>
-    <p class="lede">Interested in mental performance coaching? Reach out to discuss your goals.</p>
+    <h1>Ready to Own the Moment?</h1>
+    <p class="lede">Tell us what your athlete or team is facing, and we’ll talk through the next step.</p>
     <div class="corner vf" aria-hidden="true"></div>
   </div>
 </section>
@@ -379,7 +395,7 @@ def main():
       <h2>Contact Information</h2>
       <p><strong>Email:</strong> <a href="mailto:{EMAIL}">{EMAIL}</a></p>
       <p><strong>Location:</strong> Available for individual and team coaching</p>
-      <p style="margin-top: 32px;">Whether you're an athlete, parent, coach, or school administrator, we'd love to hear about your mental performance goals. Drop us a message and we'll get back to you soon.</p>
+      <p style="margin-top: 32px;">Whether you're an athlete, parent, coach, or school administrator, tell us where performance tends to break down: mistakes, pressure, confidence, adversity, role changes, or another challenge. We’ll help you decide whether TrueFrame is a good fit.</p>
     </div>
   </div>
 </section>
