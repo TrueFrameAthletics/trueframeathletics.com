@@ -9,6 +9,11 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    if (url.pathname === "/contact" || url.pathname === "/contact/") {
+      url.pathname = "/contact.html";
+      return env.ASSETS.fetch(new Request(url.toString(), request));
+    }
+
     if (url.pathname === "/api/contact") {
       if (request.method !== "POST") return json({ ok: false, error: "Method not allowed" }, 405);
       return handleContact(request, env);
