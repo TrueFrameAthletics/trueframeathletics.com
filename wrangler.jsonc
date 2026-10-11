@@ -10,7 +10,7 @@
     "directory": "./public",
     "binding": "ASSETS",
     "html_handling": "drop-trailing-slash",
-    "not_found_handling": "404-page",
+    "not_found_handling": "single-page-application",
     "run_worker_first": ["/api/*"]
   },
 
@@ -27,7 +27,18 @@
   ],
   "vars": {
     "CONTACT_FROM": "website@trueframeathletics.com",
-    "CONTACT_TO": "REPLACE_WITH_YOUR_INBOX@example.com"
+    "CONTACT_TO": "test@trueframeathletics.com"
+  },
+
+  // Preview deployments
+  "previews": {
+    "vars": {
+      "CONTACT_FROM": "test@trueframeathletics.com",
+      "CONTACT_TO": "test@trueframeathletics.com"
+    },
+    "send_email": [
+      { "name": "SEND_EMAIL", "destination_address": "test@trueframeathletics.com" }
+    ]
   }
 
   // Optional: keep a copy of every form submission.
