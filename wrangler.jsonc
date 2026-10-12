@@ -28,6 +28,15 @@
   "vars": {
     "CONTACT_FROM": "website@trueframeathletics.com",
     "CONTACT_TO": "REPLACE_WITH_YOUR_INBOX@example.com"
+  },
+  "previews": {
+    "vars": {
+      "CONTACT_FROM": "website@example.com",
+      "CONTACT_TO": "preview@example.com"
+    },
+    "send_email": [
+      { "name": "SEND_EMAIL", "destination_address": "preview@example.com" }
+    ]
   }
 
   // Optional: keep a copy of every form submission.
