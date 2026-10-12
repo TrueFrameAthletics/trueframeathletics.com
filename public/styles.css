@@ -372,3 +372,12 @@ a.card:hover { background: var(--purple-wash); }
 .foot-bottom { margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--line-dark); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 0.82rem; }
 .foot-bottom .mono { letter-spacing: 0.3em; color: var(--purple-lite); font-size: 0.72rem; }
 @media (max-width: 760px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-grid > :first-child { grid-column: 1 / -1; } }
+
+/* Compatibility for current pages and mobile sizing */
+.brand-tag { font-family: var(--display); font-weight: 800; font-size: .62rem; letter-spacing: .23em; text-transform: uppercase; color: var(--purple); margin-top: 4px; }
+html, body { max-width: 100%; overflow-x: clip; }
+.wrap, .hero-grid, .nav, .page-hero, main { min-width: 0; }
+.process-loop { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px; padding: 18px; border: 1px solid var(--line-dark); border-radius: 6px; }
+.loop-step { font-size: .96rem; }
+.loop-arrow { color: var(--purple-lite); }
+@media (max-width: 600px) { .process-loop { justify-content: flex-start; gap: 8px; } .loop-step { font-size: .84rem; } .hero h1 { overflow-wrap: anywhere; } }
