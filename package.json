@@ -2,9 +2,10 @@
   "name": "trueframe-athletics",
   "private": true,
   "scripts": {
-    "build": "python3 tools/build.py",
+    "build": "node tools/check-site.mjs",
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "build:legacy": "python3 tools/build.py"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
