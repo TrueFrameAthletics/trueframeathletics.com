@@ -27,7 +27,7 @@
   ],
   "vars": {
     "CONTACT_FROM": "website@trueframeathletics.com",
-    "CONTACT_TO": "REPLACE_WITH_YOUR_INBOX@example.com"
+    "CONTACT_TO": "contact@trueframeathletics.com"
   }
 
   // Optional: keep a copy of every form submission.
