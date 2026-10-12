@@ -22,8 +22,11 @@ NAV = [
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900'
-         '&family=Instrument+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap">')
+         '<link rel="stylesheet" media="print" onload="this.media=\'all\'" '
+         'href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900'
+         '&family=Instrument+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap">'
+         '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900'
+         '&family=Instrument+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>')
 
 BRAND = ('<a class="brand" href="index.html" aria-label="TrueFrame Athletics home">'
          '<img src="/logo-mark.svg" alt="" width="46" height="39">'
