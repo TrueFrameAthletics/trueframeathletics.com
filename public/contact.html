@@ -126,7 +126,7 @@
     var data={}; new FormData(f).forEach(function(v,k){ data[k]=v; });
     b.disabled=true;
     fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
-      .then(function(r){ if(!r.ok) throw 0; f.reset(); show('ok','<strong>Request received.</strong> We'll follow up within two business days.'); })
+      .then(function(r){ if(!r.ok) throw 0; f.reset(); show('ok','<strong>Request received.</strong> We\'ll follow up within two business days.'); })
       .catch(function(){ show('err','We couldn\'t send your request. Please email us at <strong>info@trueframeathletics.com</strong>.'); })
       .finally(function(){ b.disabled=false; });
   });
