@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Contact | TrueFrame Athletics</title>
-<meta name="description" content="Schedule a free consultation with TrueFrame Athletics.">
+<meta name="description" content="Contact TrueFrame Athletics about individual athlete coaching, team workshops, college athletic program collaboration, or coach development.">
 <link rel="canonical" href="https://trueframeathletics.com/contact">
 <meta property="og:title" content="Contact | TrueFrame Athletics">
-<meta property="og:description" content="Schedule a free consultation with TrueFrame Athletics.">
+<meta property="og:description" content="Contact TrueFrame Athletics about individual athlete coaching, team workshops, college athletic program collaboration, or coach development.">
 <meta property="og:url" content="https://trueframeathletics.com/contact">
 <meta name="theme-color" content="#111111">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap">
-<link rel="stylesheet" href="/styles.css?v=20261012">
+<link rel="stylesheet" href="/styles.css?v=20261025">
 </head>
 <body>
 <header class="site-header">
@@ -20,7 +20,7 @@
     <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-tag">Athletics</span></span></a>
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
     <nav class="nav-menu" id="nav-menu" aria-label="Main">
-      <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/how-it-works">How It Works</a></li><li><a href="/athletes">Athletes</a></li><li><a href="/teams">Teams &amp; Schools</a></li><li><a href="/about">About</a></li><li><a href="/testimonials">Testimonials</a></li></ul>
+      <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/how-it-works">How It Works</a></li><li><a href="/athletes">Athletes</a></li><li><a href="/teams">Teams &amp; Schools</a></li><li><a href="/programs">Programs</a></li><li><a href="/about">About</a></li><li><a href="/testimonials">Testimonials</a></li><li><a href="/difference">Difference</a></li></ul>
       <a class="btn btn-primary nav-cta" href="/contact">Get Started</a>
     </nav>
   </div>
@@ -30,12 +30,24 @@
   <div class="wrap">
     <span class="eyebrow">Contact</span>
     <h1>Let&rsquo;s get <span class="accent">started.</span></h1>
-    <p class="lede">Tell us about your athlete or program. We'll follow up within two business days to discuss whether TrueFrame is a good fit and answer any questions.</p>
+    <p class="lede">Tell us about your athlete, team, or program. We'll follow up within two business days to discuss whether TrueFrame is a good fit and answer any questions.</p>
+    <p class="fine">Prefer to reach out directly? Email <a href="mailto:rich@trueframeathletics.com">rich@trueframeathletics.com</a> or call <a href="tel:+14025063816">402-506-3816</a>.</p>
   </div>
 </section>
 <section class="section">
   <div class="wrap contact-grid">
     <form class="form" id="contact-form" novalidate>
+      <div class="field"><label for="f-type">What can we help with?</label>
+        <select id="f-type" name="inquiry_type" required>
+          <option value="">Select one</option>
+          <option>Individual Athlete Coaching</option>
+          <option>Team Workshop</option>
+          <option>College Athletic Program Collaboration</option>
+          <option>Coach Development</option>
+          <option>General Business Inquiry</option>
+        </select>
+      </div>
+      <div class="hp" aria-hidden="true"><label for="f-hp">Leave this field empty</label><input id="f-hp" name="hp_check" type="text" tabindex="-1" autocomplete="off"></div>
       <div class="form-row">
         <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
         <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
@@ -50,10 +62,10 @@
       </div>
       <div class="form-row">
         <div class="field"><label for="f-athlete">Athlete name <span class="opt">(if different)</span></label><input id="f-athlete" name="athlete_name"></div>
-        <div class="field"><label for="f-age">Athlete age or grade</label><input id="f-age" name="athlete_age"></div>
+        <div class="field"><label for="f-age">Athlete age or grade <span class="opt">(optional)</span></label><input id="f-age" name="athlete_age"></div>
       </div>
       <div class="form-row">
-        <div class="field"><label for="f-sport">Sport</label><input id="f-sport" name="sport" placeholder="e.g. Basketball"></div>
+        <div class="field"><label for="f-sport">Sport</label><input id="f-sport" name="sport" placeholder="e.g. Volleyball or Track and Field"></div>
         <div class="field"><label for="f-org">School, team, or organization <span class="opt">(optional)</span></label><input id="f-org" name="organization"></div>
       </div>
       <div class="field"><label for="f-concern">Primary performance challenge</label>
@@ -71,14 +83,15 @@
           <option>Other</option>
         </select>
       </div>
-      <div class="field"><label for="f-msg">Tell us more</label><textarea id="f-msg" name="message" placeholder="What are you seeing in competition? What would you like to improve? Any other details we should know?"></textarea></div>
+      <div class="field"><label for="f-msg">Challenge or goal</label><textarea id="f-msg" name="message" placeholder="In a few sentences, what challenge or goal would you like to work on? Include anything else we should know."></textarea></div>
       <div class="btn-row"><button class="btn btn-primary" type="submit" id="f-submit">Send Request <span class="arr">&rarr;</span></button></div>
       <div class="form-status" id="f-status" role="status" hidden></div>
     </form>
     <aside class="aside">
       <div class="aside-box"><h3>Free Consultation</h3><p>A 20–30 minute conversation about the athlete or program, what's happening under pressure, and how TrueFrame might help.</p></div>
-      <div class="aside-box"><h3>Email Us</h3>
-        <div class="copyline"><code id="email-text">info@trueframeathletics.com</code><button class="copy-btn" type="button" id="copy-email">Copy</button></div></div>
+      <div class="aside-box"><h3>Email or Call</h3>
+        <div class="copyline"><code id="email-text">rich@trueframeathletics.com</code><button class="copy-btn" type="button" id="copy-email">Copy</button></div>
+        <p class="fine" style="margin-top:10px">Phone: <a href="tel:+14025063816">402-506-3816</a></p></div>
       <div class="aside-box"><h3>Teams &amp; Programs</h3><p>Coaches and athletic directors: include your season dates, roster size, and primary goals. We'll come prepared with program options.</p></div>
     </aside>
   </div>
@@ -89,7 +102,7 @@
     <div class="foot-grid">
       <div>
         <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark-dark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-tag">Athletics</span></span></a>
-        <p class="foot-tag">Mental performance, film analysis, and athlete development for athletes who want to perform when it gets hard.</p>
+        <p class="foot-tag">Mental-performance and adversity-response coaching for athletes across all sports.</p>
       </div>
       <div class="foot-col">
         <h4>Explore</h4>
@@ -97,37 +110,62 @@
           <li><a href="/how-it-works">How It Works</a></li>
           <li><a href="/athletes">Athletes</a></li>
           <li><a href="/teams">Teams &amp; Schools</a></li>
-          <li><a href="/about">About</a></li><li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/programs">Programs &amp; Workshops</a></li>
+          <li><a href="/sample-report">Sample Performance Report</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/difference">Difference</a></li>
         </ul>
       </div>
       <div class="foot-col">
         <h4>Get started</h4>
         <ul>
-          <li><a href="/contact">Get Started</a></li>
-          <li><a href="/contact">Team inquiries</a></li>
-          <li><span>info@trueframeathletics.com</span></li>
+          <li><a href="/contact?inquiry=workshop">Request a Workshop</a></li>
+          <li><a href="/programs#individual-coaching">Explore Individual Coaching</a></li>
+          <li><a href="/contact">Contact TrueFrame</a></li>
+          <li><a href="mailto:rich@trueframeathletics.com">rich@trueframeathletics.com</a></li>
+          <li><a href="tel:+14025063816">402-506-3816</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
       <span>&copy; <span id="yr">2026</span> TrueFrame Athletics. trueframeathletics.com</span>
-      <span class="mono">Perform When It Gets Hard.</span>
+      <span class="mono">Mistakes Don't Define You. We Train What Happens Next.</span>
     </div>
   </div>
 </footer>
 <script>
 (function(){
+  var t=document.getElementById('nav-toggle'),m=document.getElementById('nav-menu');
+  if(t&&m)t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'Close':'Menu';});
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
   var f=document.getElementById('contact-form'), s=document.getElementById('f-status'), b=document.getElementById('f-submit');
   function show(cls,msg){ s.className='form-status '+cls; s.innerHTML=msg; s.hidden=false; }
+  var ALIAS={
+    individual:{type:'Individual Athlete Coaching'},
+    workshop:{type:'Team Workshop'},
+    team:{type:'Team Workshop',note:'Team development'},
+    coach:{type:'Coach Development'},
+    college:{type:'College Athletic Program Collaboration'},
+    general:{type:'General Business Inquiry'},
+    film:{note:'Competition-film observation and performance feedback'},
+    ongoing:{note:'Ongoing athlete-development program'}
+  };
+  var key=(new URLSearchParams(location.search).get('inquiry')||'').toLowerCase();
+  if(Object.prototype.hasOwnProperty.call(ALIAS,key)){
+    var pre=ALIAS[key];
+    if(pre.type) f.elements['inquiry_type'].value=pre.type;
+    if(pre.note&&!f.elements['message'].value) f.elements['message'].value='Program of interest: '+pre.note+'.\n\n';
+  }
   f.addEventListener('submit', function(e){
     e.preventDefault();
-    var el=f.elements, name=el['name'].value.trim(), email=el['email'].value.trim(), role=el['role'].value;
-    if(!name||!/^\S+@\S+\.\S+$/.test(email)||!role){ show('err','Please add your name, a valid email, and who you are so we know how to follow up.'); return; }
+    var el=f.elements, name=el['name'].value.trim(), email=el['email'].value.trim(), role=el['role'].value, kind=el['inquiry_type'].value;
+    if(!name||!/^\S+@\S+\.\S+$/.test(email)||!role||!kind){ show('err','Please add your name, a valid email, who you are, and what you are inquiring about so we know how to follow up.'); return; }
     var data={}; new FormData(f).forEach(function(v,k){ data[k]=v; });
     b.disabled=true;
     fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
       .then(function(r){ if(!r.ok) throw 0; f.reset(); show('ok','<strong>Request received.</strong> We\'ll follow up within two business days.'); })
-      .catch(function(){ show('err','We couldn\'t send your request. Please email us at <strong>info@trueframeathletics.com</strong>.'); })
+      .catch(function(){ show('err','We couldn\'t send your request. Please email <a href="mailto:rich@trueframeathletics.com"><strong>rich@trueframeathletics.com</strong></a> or call <a href="tel:+14025063816"><strong>402-506-3816</strong></a>.'); })
       .finally(function(){ b.disabled=false; });
   });
   var c=document.getElementById('copy-email');

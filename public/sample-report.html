@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sample Performance Report | TrueFrame Athletics</title>
+<meta name="description" content="An illustrative sample of a TrueFrame athlete-development report: initial observation, targeted practice plan, and follow-up observation. Not actual client results.">
+<link rel="canonical" href="https://trueframeathletics.com/sample-report">
+<meta property="og:title" content="Sample Performance Report | TrueFrame Athletics">
+<meta property="og:description" content="An illustrative sample of a TrueFrame athlete-development report: initial observation, targeted practice plan, and follow-up observation. Not actual client results.">
+<meta property="og:url" content="https://trueframeathletics.com/sample-report">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="/styles.css?v=20261025">
+<style>
+.page-hero h1{max-width:18ch}
+.sample-flag{justify-self:start;max-width:100%;margin:0;padding:12px 18px;border:1px solid var(--purple-lite);border-left-width:5px;border-radius:3px;background:rgba(124,58,237,.16);color:#fff;font-weight:700;font-size:clamp(.98rem,2.2vw,1.12rem);line-height:1.4}
+.rpt-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.rpt-flow>div{padding:26px 24px 24px;background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--purple);border-radius:4px}
+.rpt-flow .n{display:block;margin-bottom:12px;font:600 .74rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--purple)}
+.rpt-flow h3{margin:0 0 10px}
+.rpt-flow p{color:var(--mute)}
+.rpt{background:#fff;border:1px solid var(--line);border-top:6px solid var(--ink);border-radius:4px;box-shadow:0 18px 44px rgba(17,17,17,.08);overflow:hidden}
+.rpt-head{display:grid;gap:20px;padding:clamp(22px,3.5vw,38px);border-bottom:1px solid var(--line)}
+.rpt-title{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 24px}
+.rpt-title h2{margin:0;font-size:clamp(1.6rem,3.4vw,2.3rem)}
+.rpt-stamp{margin:0;padding:9px 13px;border:1px solid var(--purple-lite);border-radius:3px;background:var(--purple-wash);color:var(--purple-deep);font-weight:700;font-size:.92rem;line-height:1.4}
+.rpt-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px;margin:0}
+.rpt-meta div{display:grid;gap:4px}
+.rpt-meta dt{font:600 .7rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.rpt-meta dd{margin:0;font-weight:600}
+.rpt-scenario{display:grid;gap:10px;padding:clamp(22px,3.5vw,38px);background:var(--purple-wash);border-bottom:1px solid var(--line)}
+.rpt-scenario h3{margin:0}
+.rpt-scenario p{color:var(--ink);max-width:78ch}
+.rpt-cat{padding:clamp(22px,3.5vw,34px) clamp(22px,3.5vw,38px);border-bottom:1px solid var(--line);scroll-margin-top:90px}
+.rpt-cat-head{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
+.rpt-cat-head .num{font:600 .78rem var(--mono);letter-spacing:.1em;color:var(--purple)}
+.rpt-cat-head h3{margin:0}
+.rpt-stages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.rpt-stage{padding:16px 16px 18px;background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--ink);border-radius:3px}
+.rpt-stage.s2{border-top-color:var(--purple)}
+.rpt-stage.s3{border-top-color:var(--purple-lite)}
+.rpt-stage b{display:block;margin-bottom:8px;font:600 .68rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--purple-deep)}
+.rpt-stage p{margin:0;font-size:.95rem;color:var(--ink)}
+.rpt-foot{padding:clamp(18px,3vw,26px) clamp(22px,3.5vw,38px);background:var(--paper)}
+.rpt-foot p{margin:0}
+.rpt-note{margin-top:28px}
+.rpt-note a{font-weight:700;color:var(--purple-deep)}
+@media(max-width:900px){.rpt-flow,.rpt-stages{grid-template-columns:1fr}}
+@media(max-width:620px){.rpt-meta{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-tag">Athletics</span></span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav class="nav-menu" id="nav-menu" aria-label="Main">
+      <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/how-it-works">How It Works</a></li><li><a href="/athletes">Athletes</a></li><li><a href="/teams">Teams &amp; Schools</a></li><li><a href="/programs">Programs</a></li><li><a href="/about">About</a></li><li><a href="/testimonials">Testimonials</a></li><li><a href="/difference">Difference</a></li></ul>
+      <a class="btn btn-primary nav-cta" href="/contact">Get Started</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page-hero on-dark">
+  <div class="wrap">
+    <span class="eyebrow">Sample Performance Report</span>
+    <h1>Sample <span class="accent">Performance Report.</span></h1>
+    <p class="lede">See what a TrueFrame athlete-development report can look like: an initial observation, a targeted practice plan, and a follow-up observation, shown through an illustrative scenario.</p>
+    <p class="sample-flag">Illustrative Sample — Not Actual Client Results.</p>
+    <div class="btn-row stackable">
+      <a class="btn btn-primary" href="/contact?inquiry=individual">Discuss an Athlete Development Plan <span class="arr">&rarr;</span></a>
+      <a class="btn btn-ghost" href="/programs">View Programs &amp; Workshops</a>
+    </div>
+    <div class="corner vf" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="section on-white" id="how-it-works">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How the process works</span>
+      <h2>Observe. Plan. Review.</h2>
+      <p class="lede">Every report follows the same three stages, so athletes and coaches can see what was observed, what is being practiced, and what changed when we looked again.</p>
+    </div>
+    <div class="rpt-flow">
+      <div><span class="n">Stage 1</span><h3>Initial observation</h3><p>We review available film, athlete reflection, and coach observations to describe what happens after mistakes and setbacks.</p></div>
+      <div><span class="n">Stage 2</span><h3>Targeted practice plan</h3><p>We build a short plan around the behaviors that matter most: FRAME steps, a personal cue, and sport-specific pressure scenarios.</p></div>
+      <div><span class="n">Stage 3</span><h3>Follow-up observation</h3><p>We look at the same behaviors again, describe what we see, and refine the plan. We do not promise specific results.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sample">
+  <div class="wrap">
+    <article class="rpt" aria-labelledby="rpt-title">
+      <div class="rpt-head">
+        <div class="rpt-title">
+          <h2 id="rpt-title">Athlete Development Report</h2>
+          <p class="rpt-stamp">Illustrative Sample — Not Actual Client Results.</p>
+        </div>
+        <dl class="rpt-meta">
+          <div><dt>Athlete</dt><dd>Sample Athlete (fictional)</dd></div>
+          <div><dt>Sport and level</dt><dd>Team sport, varsity level (illustrative)</dd></div>
+          <div><dt>Coaching focus</dt><dd>Responding to mistakes in close competition</dd></div>
+          <div><dt>Information used</dt><dd>Available competition film, athlete reflection, and coach observations</dd></div>
+        </dl>
+      </div>
+
+      <div class="rpt-scenario">
+        <h3>Illustrative scenario</h3>
+        <p>Sample Athlete competes hard in practice. In close games, a mistake tends to carry into the next play: the athlete looks frustrated, hesitates on the next decision, and communicates later than usual. The coach wants the athlete to have a reliable way to reset. This fictional scenario shows how TrueFrame describes what it sees, builds a practice plan around it, and looks at the same behaviors again afterward.</p>
+        <p class="fine">&ldquo;Next play&rdquo; stands in for the next point, possession, pitch, attempt, or position, so the same format can be adapted to any sport.</p>
+      </div>
+
+      <section class="rpt-cat" id="response-after-mistakes" aria-labelledby="c1">
+        <div class="rpt-cat-head"><span class="num">01</span><h3 id="c1">Response after mistakes</h3></div>
+        <div class="rpt-stages">
+          <div class="rpt-stage s1"><b>Initial observation</b><p>In the sample film, the athlete drops their head and slows down after a turnover. The next assignment starts late, and frustration is visible in their body language.</p></div>
+          <div class="rpt-stage s2"><b>Targeted practice plan</b><p>Rehearse the first FRAME steps, Find It and Reset, with one short cue. Practice them in scenarios that recreate a costly mistake late in a close game.</p></div>
+          <div class="rpt-stage s3"><b>Follow-up observation</b><p>In later sample film, the athlete more often uses the cue and keeps their head up. After repeated errors the response is still slower, so it remains a focus.</p></div>
+        </div>
+      </section>
+
+      <section class="rpt-cat" id="re-engagement" aria-labelledby="c2">
+        <div class="rpt-cat-head"><span class="num">02</span><h3 id="c2">Re-engagement after setbacks</h3></div>
+        <div class="rpt-stages">
+          <div class="rpt-stage s1"><b>Initial observation</b><p>After a missed opportunity or a swing in momentum, the athlete takes time to get back into the flow. Effort stays steady, but attention appears to stay on what just happened.</p></div>
+          <div class="rpt-stage s2"><b>Targeted practice plan</b><p>Practice Anchor and Move: refocus on one controllable responsibility, then re-engage physically. Use short drills that start right after a simulated setback.</p></div>
+          <div class="rpt-stage s3"><b>Follow-up observation</b><p>Sample follow-up film shows the athlete reconnecting with a controllable assignment sooner in several situations. Larger momentum swings are still developing, so they stay on the plan.</p></div>
+        </div>
+      </section>
+
+      <section class="rpt-cat" id="communication" aria-labelledby="c3">
+        <div class="rpt-cat-head"><span class="num">03</span><h3 id="c3">Communication under pressure</h3></div>
+        <div class="rpt-stages">
+          <div class="rpt-stage s1"><b>Initial observation</b><p>When the team is behind or a mistake has just happened, the athlete grows quieter and communicates later than they do in practice.</p></div>
+          <div class="rpt-stage s2"><b>Targeted practice plan</b><p>Agree on a few short calls for pressure moments and rehearse them in small-group and team scenarios until they become automatic.</p></div>
+          <div class="rpt-stage s3"><b>Follow-up observation</b><p>Sample coach notes describe clearer, earlier communication during tense stretches. It is steadier in some situations and still inconsistent in others.</p></div>
+        </div>
+      </section>
+
+      <section class="rpt-cat" id="hesitation" aria-labelledby="c4">
+        <div class="rpt-cat-head"><span class="num">04</span><h3 id="c4">Hesitation and decision-making</h3></div>
+        <div class="rpt-stages">
+          <div class="rpt-stage s1"><b>Initial observation</b><p>On the play after a mistake, the athlete hesitates before committing and tends to choose the safest option instead of the best one.</p></div>
+          <div class="rpt-stage s2"><b>Targeted practice plan</b><p>Pair the Execute step with a pre-decided next action, then rehearse decisions in realistic, sport-specific pressure scenarios with feedback after each repetition.</p></div>
+          <div class="rpt-stage s3"><b>Follow-up observation</b><p>Sample film shows quicker, more decisive choices in familiar scenarios. In unfamiliar situations the athlete still pauses, so scenarios are broadened.</p></div>
+        </div>
+      </section>
+
+      <section class="rpt-cat" id="reset-cues" aria-labelledby="c5">
+        <div class="rpt-cat-head"><span class="num">05</span><h3 id="c5">Application of reset cues</h3></div>
+        <div class="rpt-stages">
+          <div class="rpt-stage s1"><b>Initial observation</b><p>The athlete understands what a reset is but has no consistent cue. Reactions vary from one mistake to the next.</p></div>
+          <div class="rpt-stage s2"><b>Targeted practice plan</b><p>Choose a personal reset cue with the athlete, such as a word, a breath, or a physical action that fits their sport. Practice it until it can be used without stopping play.</p></div>
+          <div class="rpt-stage s3"><b>Follow-up observation</b><p>In sample observations, the athlete uses the cue more consistently in practice and in some game moments. Using it in the highest-pressure moments is the next thing to practice.</p></div>
+        </div>
+      </section>
+
+      <section class="rpt-cat" id="observations" aria-labelledby="c6">
+        <div class="rpt-cat-head"><span class="num">06</span><h3 id="c6">Coach and athlete observations</h3></div>
+        <div class="rpt-stages">
+          <div class="rpt-stage s1"><b>Initial observation</b><p>The coach sees an athlete who plays well in practice but shows more frustration in games. The athlete reports that their mind stays on the last play.</p></div>
+          <div class="rpt-stage s2"><b>Targeted practice plan</b><p>Collect brief coach notes after games and short athlete reflections, both tied to the same behaviors named in the practice plan, so everyone is looking at the same things.</p></div>
+          <div class="rpt-stage s3"><b>Follow-up observation</b><p>Sample coach notes mention steadier composure after mistakes. The athlete's reflection says the cue helps and names disputed calls as the hardest situation to reset from.</p></div>
+        </div>
+      </section>
+
+      <section class="rpt-cat" id="next-steps" aria-labelledby="c7">
+        <div class="rpt-cat-head"><span class="num">07</span><h3 id="c7">Next development steps</h3></div>
+        <div class="rpt-stages">
+          <div class="rpt-stage s1"><b>Initial observation</b><p>After the first review, the athlete understands FRAME and has a personal cue. The cue is not yet reliable in the highest-pressure moments.</p></div>
+          <div class="rpt-stage s2"><b>Targeted practice plan</b><p>Continue the training cycle with more demanding pressure scenarios, agree on a point for the next film review, and confirm with the coach that the cues match team language.</p></div>
+          <div class="rpt-stage s3"><b>Follow-up observation</b><p>At the next review, the same behaviors are observed again: response after mistakes, re-engagement, communication, decision-making, and use of the cue. The plan is then updated based on what is seen.</p></div>
+        </div>
+      </section>
+
+      <div class="rpt-foot">
+        <p class="fine">Sample format only. Observations describe coachable behaviors, not psychological assessments, and this sample uses descriptions rather than scores or percentages.</p>
+      </div>
+    </article>
+
+    <div class="callout rpt-note">
+      <p><strong>About this sample.</strong> This is a fictional scenario created to show how a report can be organized. It does not describe a real athlete, team, or engagement, and it is not evidence of results or typical outcomes. The follow-up notes illustrate the format only. TrueFrame provides performance coaching and athlete development, not clinical diagnosis, psychotherapy, or mental-health treatment. Actual plans are built around each athlete's sport, role, and goals. See <a href="/difference">how the approach works</a> or explore <a href="/programs">Programs &amp; Workshops</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>Want a plan built around your athlete?</h2>
+      <p>Tell us about the athlete, the sport, and what you're seeing in competition. We'll talk through where a development plan could start.</p>
+    </div>
+    <div class="btn-row col">
+      <a class="btn btn-dark" href="/contact?inquiry=individual">Discuss an Athlete Development Plan <span class="arr">&rarr;</span></a>
+      <a class="btn btn-ghost" href="/contact?inquiry=workshop">Request a Workshop</a>
+      <a class="btn btn-ghost" href="/contact">Contact TrueFrame</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" aria-label="TrueFrame Athletics home"><img src="/logo-mark-dark.svg" alt="" width="46" height="39"><span class="brand-text"><span class="brand-name">TrueFrame</span><span class="brand-tag">Athletics</span></span></a>
+        <p class="foot-tag">Mental-performance and adversity-response coaching for athletes across all sports.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/how-it-works">How It Works</a></li>
+          <li><a href="/athletes">Athletes</a></li>
+          <li><a href="/teams">Teams &amp; Schools</a></li>
+          <li><a href="/programs">Programs &amp; Workshops</a></li>
+          <li><a href="/sample-report">Sample Performance Report</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/difference">Difference</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="/contact?inquiry=workshop">Request a Workshop</a></li>
+          <li><a href="/programs#individual-coaching">Explore Individual Coaching</a></li>
+          <li><a href="/contact">Contact TrueFrame</a></li>
+          <li><a href="mailto:rich@trueframeathletics.com">rich@trueframeathletics.com</a></li>
+          <li><a href="tel:+14025063816">402-506-3816</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="yr">2026</span> TrueFrame Athletics. trueframeathletics.com</span>
+      <span class="mono">Mistakes Don't Define You. We Train What Happens Next.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var t=document.getElementById('nav-toggle'),m=document.getElementById('nav-menu');
+  if(t&&m)t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'Close':'Menu';});
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
