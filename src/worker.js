@@ -3,7 +3,7 @@
 // This Worker only runs for /api/* (see run_worker_first in wrangler.jsonc).
 import { EmailMessage } from "cloudflare:email";
 
-const MAX = { name: 100, email: 200, phone: 40, role: 60, sport: 60, organization: 120, message: 4000 };
+const MAX = { name: 100, email: 200, phone: 40, role: 60, sport: 60, organization: 120, message: 4000, inquiry_type: 60, athlete_name: 100, athlete_age: 40, concern: 80 };
 
 export default {
   async fetch(request, env) {
@@ -34,7 +34,7 @@ async function handleContact(request, env) {
   }
 
   // Honeypot: bots fill the hidden field. Pretend success, send nothing.
-  if (data.company_website) return json({ ok: true });
+  if (data.company_website || data.hp_check) return json({ ok: true });
 
   const f = {};
   for (const [k, max] of Object.entries(MAX)) f[k] = clean(data[k], max);
@@ -44,17 +44,21 @@ async function handleContact(request, env) {
     return json({ ok: false, error: "Name, a valid email, and role are required." }, 400);
   }
 
-  const subject = `Consultation request: ${f.name} (${f.role}${f.sport ? ", " + f.sport : ""})`;
+  const subject = `${f.inquiry_type || "Consultation request"}: ${f.name} (${f.role}${f.sport ? ", " + f.sport : ""})`;
   const body = [
     `Name: ${f.name}`,
     `Email: ${f.email}`,
     `Phone: ${f.phone || "-"}`,
     `Role: ${f.role}`,
+    `Inquiry type: ${f.inquiry_type || "-"}`,
+    `Athlete: ${f.athlete_name || "-"}`,
+    `Athlete age or grade: ${f.athlete_age || "-"}`,
     `Sport: ${f.sport || "-"}`,
     `Organization: ${f.organization || "-"}`,
+    `Primary challenge: ${f.concern || "-"}`,
     `Interested in: ${services.length ? services.join(", ") : "-"}`,
     "",
-    "Message:",
+    "Challenge or goal:",
     f.message || "-",
     "",
     `Submitted: ${new Date().toISOString()}`,
