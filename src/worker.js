@@ -1,7 +1,6 @@
 // TrueFrame Athletics — Cloudflare Worker
 // Static pages are served from ./public by Workers Static Assets.
 // This Worker only runs for /api/* (see run_worker_first in wrangler.jsonc).
-import { EmailMessage } from "cloudflare:email";
 
 const MAX = { name: 100, email: 200, phone: 40, role: 60, sport: 60, organization: 120, message: 4000, inquiry_type: 60, athlete_name: 100, athlete_age: 40, concern: 80 };
 
@@ -72,17 +71,15 @@ async function handleContact(request, env) {
   }
 
   try {
-    const raw = buildMime({
-      from: env.CONTACT_FROM,
-      fromName: "TrueFrame Website",
+    await env.SEND_EMAIL.send({
       to: env.CONTACT_TO,
+      from: { email: env.CONTACT_FROM, name: "TrueFrame Website" },
       replyTo: f.email,
-      subject,
+      subject: header(subject),
       text: body,
     });
-    await env.SEND_EMAIL.send(new EmailMessage(env.CONTACT_FROM, env.CONTACT_TO, raw));
   } catch (err) {
-    console.error("send_email failed:", err && err.message);
+    console.error("send_email failed:", err && err.code, err && err.message);
     // If KV captured it, the lead is not lost; still tell the visitor to email directly.
     return json({ ok: false, error: "Could not send" }, 502);
   }
@@ -97,30 +94,6 @@ function clean(v, max) {
 
 function header(v) {
   return String(v).replace(/[\r\n]+/g, " ");
-}
-
-function b64(str) {
-  const bytes = new TextEncoder().encode(str);
-  let bin = "";
-  for (const b of bytes) bin += String.fromCharCode(b);
-  return btoa(bin).replace(/.{1,76}/g, "$&\r\n");
-}
-
-function buildMime({ from, fromName, to, replyTo, subject, text }) {
-  const encSubject = `=?UTF-8?B?${btoa(String.fromCharCode(...new TextEncoder().encode(header(subject))))}?=`;
-  return [
-    `From: "${fromName}" <${from}>`,
-    `To: <${to}>`,
-    `Reply-To: <${header(replyTo)}>`,
-    `Subject: ${encSubject}`,
-    `Message-ID: <${crypto.randomUUID()}@${from.split("@")[1]}>`,
-    `Date: ${new Date().toUTCString()}`,
-    "MIME-Version: 1.0",
-    'Content-Type: text/plain; charset="UTF-8"',
-    "Content-Transfer-Encoding: base64",
-    "",
-    b64(text),
-  ].join("\r\n");
 }
 
 function json(obj, status = 200) {

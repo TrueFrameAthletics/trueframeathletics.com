@@ -20,13 +20,14 @@
     { "pattern": "www.trueframeathletics.com", "custom_domain": true }
   ],
 
-  // Contact form email via Cloudflare Email Routing.
+  // Contact form email via the Cloudflare Email Service send_email binding.
   // CONTACT_TO must be a VERIFIED destination address in Email Routing.
+  // CONTACT_FROM uses a dedicated subdomain so it never touches the Google Workspace mail on the apex domain.
   "send_email": [
     { "name": "SEND_EMAIL", "destination_address": "rich@trueframeathletics.com" }
   ],
   "vars": {
-    "CONTACT_FROM": "website@trueframeathletics.com",
+    "CONTACT_FROM": "website@mail.trueframeathletics.com",
     "CONTACT_TO": "rich@trueframeathletics.com"
   }
 
