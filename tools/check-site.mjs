@@ -6,7 +6,7 @@ import path from "node:path";
 
 const root = path.resolve("public");
 const ORIGIN = "https://trueframeathletics.com";
-const RETIRED_COPY = ["Perform When It Gets Hard", "Launching with basketball"];
+const RETIRED_COPY = ["Perform When It Gets Hard", "Launching with basketball", "healthcare operations"];
 const errors = [];
 const warnings = [];
 const fail = (where, msg) => errors.push(`${where}: ${msg}`);
