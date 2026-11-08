@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 const root = path.resolve("public");
-const pages = ["index","how-it-works","athletes","teams","about","contact"];
+const pages = ["index","how-it-works","athletes","teams","coaches","about","contact"];
 let errors = [];
 for (const name of pages) {
   const file = path.join(root, name + ".html");
@@ -18,4 +18,4 @@ for (const name of pages) {
 }
 if(!fs.existsSync(path.join(root,"styles.css"))) errors.push("Missing styles.css");
 if(errors.length) { console.error(errors.join("\n")); process.exitCode=1; }
-else console.log("Verified primary TrueFrame pages and linked assets. Existing published HTML unchanged.");
+else console.log("Verified primary TrueFrame pages and linked assets.");
