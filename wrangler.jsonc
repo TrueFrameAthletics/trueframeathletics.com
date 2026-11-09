@@ -5,7 +5,7 @@
   "compatibility_date": "2026-09-01",
   "observability": { "enabled": true },
 
-  // Static site in ./public. The Worker only runs first for /api/*.
+  // Run the Worker first so every www path receives the canonical-host redirect.
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",

@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 const root = path.resolve("public");
-const pages = ["index","how-it-works","athletes","teams","coaches","about","contact"];
+const pages = ["index","how-it-works","athletes","teams","coaches","programs","sample-report","difference","own-the-moment","testimonials","about","contact"];
 let errors = [];
 for (const name of pages) {
   const file = path.join(root, name + ".html");
