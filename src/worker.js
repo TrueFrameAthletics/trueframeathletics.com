@@ -1,6 +1,6 @@
 // TrueFrame Athletics — Cloudflare Worker
 // Static pages are served from ./public by Workers Static Assets.
-// This Worker only runs for /api/* (see run_worker_first in wrangler.jsonc).
+// Runs before static assets for the canonical-host redirect and /api/* handlers.
 import { EmailMessage } from "cloudflare:email";
 
 const MAX = { name: 100, email: 200, phone: 40, role: 60, sport: 60, organization: 120, message: 4000 };
