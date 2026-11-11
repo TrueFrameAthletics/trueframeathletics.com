@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
-  <title id="title">TrueFrame Athletics — Mental Performance Coaching</title>
-  <desc id="description">A branded social preview graphic for TrueFrame Athletics.</desc>
-  <rect width="1200" height="630" fill="#111111"/>
-  <path d="M800 0h400v630H800z" fill="#1c1921"/>
-  <path d="M855 92h230v446H855z" fill="none" stroke="#7b35ed" stroke-width="3"/>
-  <path d="M970 92v446M855 315h230M855 204h115v222H855M1085 204H970v222h115" fill="none" stroke="#3b3445" stroke-width="2"/>
-  <circle cx="970" cy="315" r="52" fill="none" stroke="#7b35ed" stroke-width="3"/>
-  <path d="M120 115h54v-12h-66v36h12zm0 400h54v12h-66v-36h12zm450-400h-54v-12h66v36h-12zm0 400h-54v12h66v-36h-12z" fill="#a982ff"/>
-  <text x="120" y="188" fill="#a982ff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="6">TRUEFRAME ATHLETICS</text>
-  <text x="120" y="294" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">Perform When</text>
-  <text x="120" y="370" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">It Gets <tspan fill="#a982ff">Hard.</tspan></text>
-  <text x="120" y="438" fill="#c8c3ce" font-family="Arial, Helvetica, sans-serif" font-size="25">Mental performance coaching for athletes and teams</text>
-  <text x="120" y="493" fill="#a982ff" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="3">FILM  ·  FRAME  ·  COMPETE</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#15121b"/><path d="M1120 0V630" stroke="#bc94ff" stroke-width="8"/><g fill="#f9f5ee" font-family="Arial,sans-serif"><text x="70" y="110" font-size="27">TRUEFRAME ATHLETICS / REAL-TIME COACHING</text><text x="70" y="265" font-size="77" font-weight="bold">You coach the game.</text><text x="70" y="365" font-size="77" font-weight="bold" fill="#bc94ff">I coach the response.</text><text x="70" y="510" font-size="30">On the sideline. In practice. During the game.</text></g></svg>
