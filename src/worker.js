@@ -15,6 +15,11 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    if (["/basketball-mental-performance", "/basketball-mental-performance/", "/basketball-mental-performance.html"].includes(url.pathname)) {
+      url.pathname = "/sports-mental-performance";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/api/contact") {
       if (request.method !== "POST") return json({ ok: false, error: "Method not allowed" }, 405);
       return handleContact(request, env);
