@@ -14,7 +14,7 @@
  const raw=Object.fromEntries(new FormData(form));
  const data={name:raw.name.trim(),email:raw.email.trim(),phone:raw.phone,role:raw.role,sport:raw.sport,organization:raw.organization,company_website:raw.company_website,services:[raw.inquiry_type],message:[`Location: ${raw.location||'-'}`,`Athlete: ${raw.athlete_name||'-'}`,`Age or grade: ${raw.athlete_age||'-'}`,`Challenge: ${raw.concern||'-'}`,'',raw.message||''].join('\n')};
  button.disabled=true;show('','Sending your request…');
- try{const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});if(!response.ok)throw new Error('send');const result=await response.json();if(!result.ok)throw new Error('send');form.reset();show('ok','Request received. Richard will follow up to discuss your team and the support you’re looking for.');}
+ try{const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});if(!response.ok)throw new Error('send');const result=await response.json();if(!result.ok)throw new Error('send');form.reset();show('ok','Request received. Richard will follow up about your coaching goals.');}
  catch{show('err','Your request could not be sent. Please email rich@trueframeathletics.com or call 402-506-3816. Your entries are still here so you can try again.');}
  finally{button.disabled=false;}
  });
