@@ -9,6 +9,14 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    if (["/college-teams", "/college-teams/", "/college-teams.html"].includes(url.pathname)) {
+      url.protocol = "https:";
+      url.hostname = "trueframeathletics.com";
+      url.pathname = "/teams";
+      url.hash = "college-teams";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.hostname === "www.trueframeathletics.com") {
       url.protocol = "https:";
       url.hostname = "trueframeathletics.com";
