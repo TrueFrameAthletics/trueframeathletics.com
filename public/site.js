@@ -5,7 +5,7 @@
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav?.classList.contains('open')){close();toggle.focus();}});
  document.getElementById('yr').textContent=new Date().getFullYear();
  const form=document.getElementById('contact-form');if(!form)return;
- const alias={pilot:'Free 30-Minute Pilot Session',sideline:'Sideline Support',practice:'Practice Integration',ongoing:'Ongoing Team Support',individual:'Individual Athlete Coaching',workshop:'Team Workshop',team:'Ongoing Team Support',coach:'Coach Development',college:'College Athletic Program Collaboration',general:'General Business Inquiry'};
+ const alias={sideline:'Sideline Support',practice:'Practice Integration',ongoing:'Ongoing Team Support',individual:'Individual Athlete Coaching',workshop:'Team Workshop',team:'Ongoing Team Support',coach:'Coach Development',college:'College Athletic Program Collaboration',general:'General Business Inquiry'};
  const key=new URLSearchParams(location.search).get('inquiry');if(alias[key])form.elements.inquiry_type.value=alias[key];
  if(key==='film')form.elements.message.value='Interested in film and pressure review.\n\n';
  const status=document.getElementById('f-status'),button=document.getElementById('f-submit');
