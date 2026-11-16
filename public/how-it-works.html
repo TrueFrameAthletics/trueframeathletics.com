@@ -17,6 +17,10 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "TrueFrame Athletics", "url": "https://trueframeathletics.com/", "description": "In-person mental-performance and adversity-response coaching on the sideline and at practice, while pressure is happening.", "email": "rich@trueframeathletics.com", "telephone": "+1-402-506-3816"}</script>
 <script defer src="/site.js?v=20261111">
 </script>
+<style>
+.scenario-choices{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}.scenario-choices button{background:transparent;border:1px solid #877493;font-size:15px;padding:12px 16px}.scenario-choices button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}.session-panel{padding:clamp(22px,4vw,42px);background:#fff;border-left:4px solid #8d65bc;border-radius:4px}.session-panel blockquote{font-size:clamp(22px,3vw,30px)}.session-controls{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.session-controls button:disabled{cursor:default}.session-panel p:last-child{margin-bottom:0}
+</style>
+<script defer src="/live-demo.js?v=20261116"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -49,13 +53,53 @@
 <p class="hero-foot">SIDELINE SUPPORT <span>/</span> PRACTICE INTEGRATION <span>/</span> ALL SPORTS</p>
 </div>
 </section>
-<section class="section" id="trueframe-approach">
+<section class="section" id="live-demo">
 <div class="wrap">
-<p class="eyebrow">THE TRUEFRAME APPROACH</p>
-<h2>Coach the response while the moment is still happening.</h2>
-<p class="lede">We rehearse a reset in practice. During approved breaks in competition, Richard helps the athlete use that familiar cue and return to the coach’s next instruction. Film and follow-up help identify what to practice next.</p>
-<p>This is performance coaching, not therapy. It complements the work of coaches and sports psychology staff.</p>
-<p id="sideline-example"><a href="/#sideline-example">Watch the bench reset example</a> or <a href="/teams#working-with-your-staff">see how Richard works with your staff</a>.</p>
+<p class="eyebrow">LIVE DEMO</p>
+<h2>TrueFrame Athletics Live Demo</h2>
+<p class="lede">Thirty seconds of a session running at practice speed. A player turns it over, runs the FRAME reset on the sideline while her head coach watches, goes back in composed, and the coaches talk after.</p>
+<video controls preload="metadata" playsinline aria-label="TrueFrame Athletics live demo" aria-describedby="demo-disclosure" style="width:100%;height:auto;display:block;border-radius:12px;background:#17131d;">
+<source src="/media/trueframe-live-demo-30s.mp4" type="video/mp4">
+Your browser does not support the video tag. <a href="/media/trueframe-live-demo-30s.mp4">Download the live demo</a>.
+</video>
+<p class="fine" id="demo-disclosure">AI-generated, dramatized demonstration with stand-in characters. Not footage of an actual client session.</p>
+<div class="cards">
+<article><span class="number">01</span><h3>The mistake.</h3><p>A turnover in the drill, and the frustration that follows her to the bench.</p></article>
+<article><span class="number">02</span><h3>The reset.</h3><p>Twenty seconds on the sideline: Find It, Reset, Anchor, Move, Execute.</p></article>
+<article><span class="number">03</span><h3>Back in.</h3><p>The next possession gets her attention, not the last one.</p></article>
+<article><span class="number">04</span><h3>The coaches talk.</h3><p>What he saw, and the one cue he would use again at practice.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="run-it-yourself">
+<div class="wrap">
+<p class="eyebrow">RUN IT YOURSELF — PICK A SCENARIO</p>
+<h2>Step inside the session.</h2>
+<p class="lede">Click a scenario and step through the 30-minute session. Each one walks the five FRAME steps with the sideline script and the session clock.</p>
+<div class="scenario-choices" role="group" aria-label="Choose a practice scenario">
+<button type="button" class="button" data-scenario="0" aria-pressed="true">After mistakes</button>
+<button type="button" class="button" data-scenario="1" aria-pressed="false">Pressure moments</button>
+<button type="button" class="button" data-scenario="2" aria-pressed="false">Focus &amp; composure</button>
+<button type="button" class="button" data-scenario="3" aria-pressed="false">Role adjustment</button>
+<button type="button" class="button" data-scenario="4" aria-pressed="false">Back from injury / slump</button>
+<button type="button" class="button" data-scenario="5" aria-pressed="false">Performance anxiety</button>
+</div>
+<noscript><p>Enable JavaScript to explore all six scenarios. The first step of After mistakes is shown below.</p></noscript>
+<div class="session-panel" aria-live="polite" aria-atomic="true">
+<p class="eyebrow" id="session-scenario">AFTER MISTAKES</p>
+<p id="session-context">A turnover follows the athlete into the next possession.</p>
+<p class="label" id="session-clock">SESSION CLOCK · 0–5 MINUTES · STEP 1 OF 5</p>
+<h3 id="session-step">Find It</h3>
+<blockquote id="session-script">“What happened, and what are you carrying into this next rep?”</blockquote>
+<p id="session-action">Name the mistake and the reaction in one sentence. Separate the last play from the next assignment.</p>
+</div>
+<div class="session-controls">
+<button type="button" class="button" id="session-previous" disabled>Previous step</button>
+<button type="button" class="button" id="session-next">Next: Reset →</button>
+</div>
+<p class="fine">The session clock outlines the full practice session, including repetitions and a debrief. The brief sideline reset in the video is one part of that session.</p>
+<p class="lede">This is the same session format your team gets in the free 30-minute Own the Moment pilot, adapted to your sport and your coach’s priorities.</p>
+<a class="button" href="/contact?inquiry=workshop">Request a free pilot session</a>
 </div>
 </section>
 <section class="section" id="frame">
@@ -92,7 +136,7 @@
 </div>
 </div>
 </section>
-<section class="section" id="">
+<section class="section" id="what-we-observe">
 <div class="wrap">
 <p class="eyebrow">IN THE MOMENT</p>
 <h2>What we observe</h2>
@@ -104,7 +148,8 @@
 <div class="wrap">
 <p class="eyebrow">LET’S TALK ABOUT YOUR TEAM</p>
 <h2>Put the method to work.</h2>
-<a class="button" href="/programs">Explore coaching options</a>
+<p>Start with a free 30-minute Own the Moment pilot with one team. Richard runs it, you watch, and afterward you get a short debrief.</p>
+<a class="button" href="/contact?inquiry=workshop">Request a free pilot session</a>
 </div>
 </section>
 </main>
