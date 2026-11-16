@@ -5,26 +5,32 @@ import { EmailMessage } from "cloudflare:email";
 
 const MAX = { name: 100, email: 200, phone: 40, role: 60, sport: 60, organization: 120, message: 4000 };
 
+const PAGE_REDIRECTS = new Map([
+  ["/college-teams", "/teams#college-teams"],
+  ["/coaches", "/teams#working-with-your-staff"],
+  ["/difference", "/how-it-works#trueframe-approach"],
+  ["/own-the-moment", "/programs#workshops"],
+  ["/schools-teams", "/teams"],
+  ["/athletes-parents", "/athletes"],
+  ["/services", "/programs"],
+  ["/basketball-mental-performance", "/sports-mental-performance"],
+]);
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    if (["/college-teams", "/college-teams/", "/college-teams.html"].includes(url.pathname)) {
-      url.protocol = "https:";
-      url.hostname = "trueframeathletics.com";
-      url.pathname = "/teams";
-      url.hash = "college-teams";
-      return Response.redirect(url.toString(), 301);
+    const path = url.pathname.replace(/(?:\.html|\/)$/, "");
+    const target = PAGE_REDIRECTS.get(path);
+    if (target) {
+      const destination = new URL(target, "https://trueframeathletics.com");
+      destination.search = url.search;
+      return Response.redirect(destination.toString(), 301);
     }
 
     if (url.hostname === "www.trueframeathletics.com") {
       url.protocol = "https:";
       url.hostname = "trueframeathletics.com";
-      return Response.redirect(url.toString(), 301);
-    }
-
-    if (["/basketball-mental-performance", "/basketball-mental-performance/", "/basketball-mental-performance.html"].includes(url.pathname)) {
-      url.pathname = "/sports-mental-performance";
       return Response.redirect(url.toString(), 301);
     }
 
